@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Animated Landing Page</title>
+  
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- AOS Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif;}
+    body {background:#f9fafc; color:#333;}
+    
+    /* HERO */
+    header {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color:white; text-align:center; padding:100px 20px;
+    }
+    header h1 { font-size:48px; margin-bottom:15px;}
+    header p { font-size:18px; margin-bottom:30px; color:#cbd5f5;}
+    
+    .btn {
+      padding:14px 28px; border-radius:8px; text-decoration:none; font-weight:500; margin:5px; display:inline-block; transition:0.3s ease;
+    }
+    .primary {
+      background: #6366f1; color:white;
+    }
+    .primary:hover {
+      background:#4f46e5; transform:translateY(-3px);
+    }
+    .secondary {
+      background:transparent; border:1px solid #cbd5f5; color:#cbd5f5;
+    }
+    .secondary:hover {
+      background:#cbd5f5; color:#0f172a;
+    }
+
+    /* SECTION */
+    .section { padding:80px 20px; text-align:center; max-width:1100px; margin:auto;}
+    .section h2 { font-size:32px; margin-bottom:10px;}
+    .section p { color:#666; margin-bottom:40px;}
+    
+    /* FEATURES / CARDS */
+    .features { display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:20px;}
+    .card {
+      background:white; padding:30px; border-radius:12px; box-shadow:0 10px 25px rgba(0,0,0,0.05);
+      transition:0.3s;
+    }
+    .card:hover { transform:translateY(-5px);}
+    .card h3 { margin-bottom:10px;}
+
+    /* CTA */
+    .cta { background: linear-gradient(135deg,#6366f1,#4f46e5); color:white; border-radius:12px; padding:60px 20px;}
+    .cta h2 { margin-bottom:10px;}
+    .cta p { margin-bottom:20px; color:#e0e7ff;}
+
+    /* CONTACT FORM */
+    .contact-form form {
+      background:white;
+      padding:30px;
+      border-radius:12px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.05);
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width:100%;
+      padding:12px 15px;
+      margin-bottom:15px;
+      border-radius:8px;
+      border:1px solid #ccc;
+      font-family:'Poppins', sans-serif;
+    }
+    .contact-form button {
+      width:100%;
+      padding:14px;
+      border:none;
+      border-radius:8px;
+      background:#6366f1;
+      color:white;
+      font-weight:500;
+      cursor:pointer;
+      transition:0.3s ease;
+    }
+    .contact-form button:hover { transform:translateY(-3px); }
+
+    /* FOOTER */
+    footer { text-align:center; padding:30px; color:#777; font-size:14px;}
+
+    @media(max-width:600px){ header h1{ font-size:32px;} }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header data-aos="fade-down">
+    <h1>Grow Your Business Online</h1>
+    <p>We create modern, high-converting websites that turn visitors into customers</p>
+    <a href="#" class="btn primary">Get Started</a>
+    <a href="#" class="btn secondary">View Services</a>
+  </header>
+
+  <!-- SERVICES -->
+  <section class="section">
+    <h2 data-aos="fade-up">Our Services</h2>
+    <p data-aos="fade-up" data-aos-delay="100">Everything you need to grow your brand online</p>
+
+    <div class="features">
+      <div class="card" data-aos="fade-up" data-aos-delay="0">
+        <h3>Web Design</h3>
+        <p>Clean, modern, and mobile-friendly websites</p>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="200">
+        <h3>Landing Pages</h3>
+        <p>Designed to convert visitors into paying customers</p>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="400">
+        <h3>Branding</h3>
+        <p>Make your business stand out from competitors</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" data-aos="fade-up" data-aos-delay="0">
+    <h2>Why Choose Us?</h2>
+    <p>We focus on results, not just design. Our goal is to help your business grow faster.</p>
+  </section>
+
+  <!-- CONTACT CARDS -->
+  <section class="section" data-aos="fade-up">
+    <h2>Contact Us</h2>
+    <p>Reach out to us for inquiries, support, or to get started.</p>
+
+    <div class="features" style="justify-content:center; max-width:700px; margin:auto;">
+      <div class="card" data-aos="fade-up" data-aos-delay="0">
+        <h3>📞 Phone</h3>
+        <p><a href="tel:+2348012345678">+234 801 234 5678</a></p>
+      </div>
+
+      <div class="card" data-aos="fade-up" data-aos-delay="200">
+        <h3>🏬 Shop Address</h3>
+        <p>123 Main Street, Lagos, Nigeria</p>
+      </div>
+
+      <div class="card" data-aos="fade-up" data-aos-delay="400">
+        <h3>✉️ Email</h3>
+        <p><a href="mailto:info@yourbusiness.com">info@yourbusiness.com</a></p>
+      </div>
+    </div>
+
+    <!-- CONTACT FORM -->
+    <div class="contact-form" data-aos="fade-up" data-aos-delay="600" style="max-width:700px; margin:40px auto;">
+      <form action="https://formsubmit.co/info@yourbusiness.com" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="cta" data-aos="zoom-in">
+      <h2>Ready to Grow?</h2>
+      <p>Let’s build something amazing together</p>
+      <a href="#" class="btn primary">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer data-aos="fade-up" data-aos-delay="0">
+    <p>© 2026 Your Business Name. All rights reserved.</p>
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration:1000, once:true });
+  </script>
+
+</body>
+</html>
